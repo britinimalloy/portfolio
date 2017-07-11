@@ -1,0 +1,8 @@
+/* put something in to hide the nav bar for smaller screens */
+/* something like this:
+@media (min-width: 800px) {
+   .icon-menu {
+     display: none;
+   }
+
+ } */
