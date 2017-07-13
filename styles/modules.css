@@ -1,20 +1,20 @@
 .header {
-  background-color: #e8b4dc;
+  background-color: #e65ac5;
 }
 
 .header-title {
   text-align: center;
 }
 
-.main {
+#main {
   background-color: #e8b4dc;
 }
 
-.about {
-  /*background-color: #e8b4dc;*/
+#about {
+  background-color: #f2e3ef;
 }
 
-.projects {
+#projects {
   background-color: #e8b4dc;
 }
 /* put something in to hide the nav bar for smaller screens */
