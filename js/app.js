@@ -3,8 +3,8 @@
 // ===========================
 // ========CONSTRUCTOR========
 // ===========================
-function Projects (name, img, description) {
-  this.name = name;
-  this.img = img;
-  this.description = description;
+function Projects (projectDataObj) {
+  this.name = projectDataObj.name;
+  this.img = projectDataObj.img;
+  this.description = projectDataObj.description;
 }
