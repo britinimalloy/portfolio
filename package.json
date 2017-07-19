@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/britinimalloy/portfolio/issues"
   },
-  "homepage": "https://github.com/britinimalloy/portfolio#readme"
+  "homepage": "https://github.com/britinimalloy/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
