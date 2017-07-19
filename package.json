@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "* lots from the class lab demos, especially what's in the fonts folder and the icons.css file\r * James on Monday July 17th (pair programming)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/britinimalloy/portfolio.git"
+  },
+  "author": "Britini Malloy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/britinimalloy/portfolio/issues"
+  },
+  "homepage": "https://github.com/britinimalloy/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
