@@ -25,7 +25,10 @@ projects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
 
-var newListElement = $('.LItemplateUL').clone();
-newListElement.text('here is another li, this is silly');
-console.log(newListElement);
-$('ul').append(newListElement);
+function addNewElementForCloning () {
+  var newListElement = $('.LItemplateUL').clone();
+  newListElement.text('here is another li, this is silly');
+  console.log(newListElement);
+  $('ul').append(newListElement);
+}
+addNewElementForCloning();
