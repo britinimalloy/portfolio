@@ -25,10 +25,10 @@ projects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
 
-function addNewElementForCloning () {
-  var newListElement = $('.LItemplateUL').clone();
-  newListElement.text('here is another li, this is silly');
-  console.log(newListElement);
-  $('ul').append(newListElement);
-}
-addNewElementForCloning();
+// function addNewElementForCloning () {
+//   var newListElement = $('.LItemplateUL').clone();
+//   newListElement.text('here is another li, this is silly');
+//   console.log(newListElement);
+//   $('ul').append(newListElement);
+// }
+// addNewElementForCloning();
