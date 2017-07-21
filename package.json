@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "* lots from the class lab demos, especially what's in the fonts folder and the icons.css file\r * James on Monday July 17th (pair programming)\r * [Sara Jade](\"https://www.linkedin.com/in/sara-jade\") on Friday July21 (pair programming)",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/britinimalloy/portfolio.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/britinimalloy/portfolio/issues"
+  },
+  "homepage": "https://github.com/britinimalloy/portfolio#readme"
+}
