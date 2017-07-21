@@ -8,6 +8,13 @@
     <link href="styles/base.css" type="text/css" rel="stylesheet"/>
     <link href="styles/modules.css" type="text/css" rel="stylesheet"/>
     <link href="styles/style.css" type="text/css" rel="stylesheet"/>
+    <script type="text/x-handlebars-template" id="projectsHandlebarTemplate">
+      <article>
+        <h2 class="projectName">{{name}}</h2>
+        <img class="projectImg" src="{{img}}" />
+        <section class="projectDescription">{{section}}</section>
+      </article>
+    </script>
   </head>
   <body>
     <header class="header">
@@ -16,7 +23,8 @@
       </section>
       <nav class="main-nav">
         <div class="icon-menu"></div>
-        <ul>
+
+        <ul class="nav">
           <li class="tabs"><a href="#main" class="icon-home">  home</a></li>
           <li class="tabs"><a href="#about" class="icon-address-book">  about</a></li>
           <li class="tabs"><a href="#about">projects</a></li>
@@ -31,6 +39,11 @@
         <p>Run. One day, just one day, maybe I'll meet somebody who gets the whole 'don't wander off' thing. Your wish is my command. But be careful what you wish for. The past is another country. 1987's just the Isle of Wight. And I'm looking for a blonde in a Union Jack. A specific one, mind, I didn't just wake up this morning with a craving. An old friend of mine. Well, enemy. The stuff of nightmares reduced to an exhibit. I'm getting old. We're fallin' through space, you and me, clinging to the skin of this tiny little world, and if we let go...</p>
         <p>Nine hundred years of time and space, and I've never been slapped by someone's mother. Excuse me, do you mind not farting while I'm saving the world? Yeah, I came first in jiggery pokery, what about you? You look beautiful! ...considering. That you're human. One day, just one day, maybe I'll meet somebody who gets the whole 'don't wander off' thing. Lots of planets have a North. Run. An old friend of mine. Well, enemy. The stuff of nightmares reduced to an exhibit. I'm getting old. I think you need a doctor.</p>
         <p>The trouble with computers, of course, is that they're very sophisticated idiots. They do exactly what you tell them at amazing speed. Even if you order them to kill you. So if you do happen to change your mind, it's very difficult to stop them from obeying the original order. But not impossible. Come on! Would you like a jelly baby? What?! Come out. And don't touch anything! You're standing on my scarf. Well, of course I'm being childish! There's no point being grown-up if you can't be childish sometimes.</p>
+      </section>
+      <section>
+        <ul>
+          <li class="LItemplateUL">Hi there!</li>
+        </ul>
       </section>
       <section id="about" class="tab-content">
         <img src="img/apprenti_img.jpg">
