@@ -11,27 +11,27 @@ function Projects (projectDataObj) {
   this.description = projectDataObj.description;
 }
 
-//Projects.prototype.toHtml = function() {
-//  var projectTemplateString = $('#projectsHandlebarTemplate').html();
-//  var compiledProject = Handlebars.compile(projectTemplateString);
-//  return compiledProject(projectTemplateString);
-//}
+Projects.prototype.toHtml = function() {
+ var projectTemplateString = $('#projectsHandlebarTemplate').html();
+ var compiledProject = Handlebars.compile(projectTemplateString);
+ return compiledProject(projectTemplateString);
+}
 
-//projectData.forEach(function(projectObject) {
-//  projects.push(new Projects(projectObject));
-//});
+projectData.forEach(function(projectObject) {
+ projects.push(new Projects(projectObject));
+});
 
-//projects.forEach(function(project) {
-//  $('#projects').append(project.toHtml());
-//});
+projects.forEach(function(project) {
+ $('#projects').append(project.toHtml());
+});
 
-// function addNewElementForCloning () {
-//   var newListElement = $('.LItemplateUL').clone();
-//   newListElement.text('here is another li, this is silly');
-//   console.log(newListElement);
-//   $('ul').append(newListElement);
-// }
-// addNewElementForCloning();
+function addNewElementForCloning () {
+  var newListElement = $('.LItemplateUL').clone();
+  newListElement.text('here is another li, this is silly');
+  console.log(newListElement);
+  $('ul').append(newListElement);
+}
+addNewElementForCloning();
 
 var projects = [];
 
@@ -52,3 +52,7 @@ projectData.forEach(function(projectDataObj) {
 projects.forEach(function(project){
   $('#projects').append(project.toHtml());
 });
+
+projectData.map();
+
+projectData.reduce();

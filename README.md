@@ -5,3 +5,6 @@
 * James on Monday July 17th (pair programming)
 * demos, including the icons.css and the fonts folder
 * Alana helped me fix the main-nav so hamburger menu appears when nav li's disappear
+
+
+Oh crap, I got so caught up in the code wars stuff I totally forgot about this lab!
