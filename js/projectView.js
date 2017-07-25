@@ -3,9 +3,9 @@
 var projectView = {};
 
 projectView.handleMainNav = function () {
-  $('.main-nav').on('click', '.tab', function () {
-    $('.tab-content').hide();
-  })
+  // $('.main-nav').on('click', '.tab', function () {
+  //   $('.tab-content').hide();
+  // })
 };
 
 projectView.handleHamburgerBehavior = function () {
