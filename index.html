@@ -22,6 +22,7 @@
         <h1>Britini Malloy</h1>
       </section>
       <nav class="main-nav">
+
         <div class="icon-menu" id="hamburger-icon"></div>
         <ul class="nav" id="main-links">
           <li class="tabs"><a href="#main" class="icon-home">  home</a></li>
@@ -55,6 +56,13 @@
         <p>I just have one question… do you know how to fly this thing? These are attack eyebrows. You could take bottle tops off with these. I don't think that I'm a hugging person now. You see when I started, all those years ago, I was just running. I called myself the Doctor but it was just a name. Then I went to Skaro. And I met you lot. And I understood who I was. Shut up! Just shut up, shut up, shut up, shuttity up up up! It's all right up to the eyebrows. Then it goes haywire. When this is all over, you can find a shoulder to cry on. But for now, you need me.</p>
       </section>
       <section id="projects" class="tab-content">
+        <script type="text/x-handlebars-template" id="projectsHandlebarTemplate">
+          <article>
+            <h2 class="projectName">{{name}}</h2>
+            <img class="projectImg" src="{{img}}" />
+            <section class="projectDescription">{{section}}</section>
+          </article>
+        </script>
       </section>
     </main>
     <footer>
