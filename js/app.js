@@ -11,16 +11,22 @@ function Projects (projectDataObj) {
   this.description = projectDataObj.description;
 }
 
-Projects.prototype.toHtml = function() {
-  var projectTemplateString = $('#projectsHandlebarTemplate').html();
-  var compiledProject = Handlebars.compile(projectTemplateString);
-  return compiledProject(projectTemplateString);
+var projects = [];
+
+Projects.all = [];
+
+Projects.prototype.toHtml = function () {
+  var hTemplateInfo = $('#projectsHandlebarTemplate').html();
+
+  var compiledProject = Handlebars.compile(hTemplateInfo);
+
+  return compiledProject(this);
 }
 
-projectData.forEach(function(projectObject) {
-  projects.push(new Projects(projectObject));
+projectData.forEach(function(projectDataObj) {
+  projects.push(new Projects(projectDataObj));
 });
 
-projects.forEach(function(project) {
+projects.forEach(function(project){
   $('#projects').append(project.toHtml());
 });
