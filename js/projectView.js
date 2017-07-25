@@ -8,6 +8,16 @@ projectView.handleMainNav = function () {
   // })
 };
 
+projectView.handleHamburgerBehavior = function () {
+  $('#hamburger-icon').on('click', function () {
+    $('ul.nav').children().show();
+    $('#hamburger-icon').hide();
+    console.log('hello');
+    console.log(this);
+  })
+}
+
 $(document).ready(function () {
   projectView.handleMainNav();
+  projectView.handleHamburgerBehavior();
 })
