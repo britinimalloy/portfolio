@@ -24,13 +24,3 @@ projectData.forEach(function(projectObject) {
 projects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
-
-// function addNewElementForCloning () {
-//   var newListElement = $('.LItemplateUL').clone();
-//   newListElement.text('here is another li, this is silly');
-//   console.log(newListElement);
-//   $('ul').append(newListElement);
-// }
-// addNewElementForCloning();
-
-// on-click event handler for clicking the hamburger menu icon
