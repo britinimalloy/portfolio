@@ -32,3 +32,5 @@ projects.forEach(function(project) {
 //   $('ul').append(newListElement);
 // }
 // addNewElementForCloning();
+
+// on-click event handler for clicking the hamburger menu icon
