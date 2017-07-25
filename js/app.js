@@ -1,7 +1,5 @@
 'use strict';
 
-var projects = [];
-
 // ===========================
 // ========CONSTRUCTOR========
 // ===========================
@@ -11,14 +9,4 @@ function Projects (projectDataObj) {
   this.description = projectDataObj.description;
 }
 
-var projects = [];
-
 Projects.all = [];
-
-projectData.forEach(function(projectDataObj) {
-  projects.push(new Projects(projectDataObj));
-});
-
-projects.forEach(function(project){
-  $('#projects').append(project.toHtml());
-});
