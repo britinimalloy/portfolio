@@ -10,4 +10,4 @@ const requestProxy = require('express-request-proxy');
 const app = express();
 let conString = process.env.CONNECTION_STRING || `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/kilovolt`;
 const client = new pg.Client(conString);
-const proxy = require('express-request-proxy'); // REVIEW: We've added a new package here to our requirements, as well as in the package.json
+const proxy = require('express-request-proxy');
