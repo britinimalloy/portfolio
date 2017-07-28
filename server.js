@@ -9,7 +9,9 @@ const bodyParser = require('body-parser');
 const requestProxy = require('express-request-proxy');
 const app = express();
 const conString = process.env.CONNECTION_STRING || `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/kilovolt`;
-const PORT = process.env.PORT || 3000;app.listen(PORT, function() {
+const PORT = process.env.PORT || 3000;
+app.use(express.static('./public'));
+app.listen(PORT, function() {
   console.log(`App is listening on: ${PORT}`);
 })
 const client = new pg.Client(conString);
