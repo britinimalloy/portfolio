@@ -8,8 +8,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const requestProxy = require('express-request-proxy');
 const app = express();
-var conString = process.env.CONNECTION_STRING || `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/kilovolt`;
-//let conString = process.env.CONNECTION_STRING || `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/kilovolt`;
+const conString = process.env.CONNECTION_STRING || `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/kilovolt`;
 const PORT = process.env.PORT || 3000;app.listen(PORT, function() {
   console.log(`App is listening on: ${PORT}`);
 })
