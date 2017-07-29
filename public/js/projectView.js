@@ -19,27 +19,27 @@ projectView.handleHamburgerBehavior = function () {
 };
 
 // hide everything but main (and footer section) on page load
-projectView.pageInit = function () {
-  $('.tab-content').hide();
-  $('#main').show();
-  $('#list-stuff').hide();
-  $('#about').hide();
-  $('#projects').hide();
-};
+// projectView.pageInit = function () {
+//   $('.tab-content').hide();
+//   $('#main').show();
+//   $('#list-stuff').hide();
+//   $('#about').hide();
+//   $('#projects').hide();
+// };
 
 // from starter code lab 4
-// projectView.handlePageBehavior = function() {
-//   $('#main-links').on('change', function() {
-//     if ($(this).val()) {
-//       $('article').hide();
-//       $(`article[data-author="${$(this).val()}"]`).fadeIn();
-//     } else {
-//       $('article').fadeIn();
-//       $('article.template').hide();
-//     }
-//     $('#category-filter').val('');
-//   });
-// };
+projectView.handlePageBehavior = function() {
+  $('#main-links').on('change', function() {
+    if ($(this).val()) {
+      $('article').hide();
+      $(`article[data-author="${$(this).val()}"]`).fadeIn();
+    } else {
+      $('article').fadeIn();
+      $('article.template').hide();
+    }
+    $('#category-filter').val('');
+  });
+};
 
 
 $(document).ready(function () {
