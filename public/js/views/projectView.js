@@ -3,12 +3,22 @@
 var projectView = {};
 
 projectView.handleMainNav = function () {
-  $('#main').show();
-  $('#list-stuff').hide();
-  $('#about').hide();
-  $('#projects').hide();
   $('.main-nav').on('click', '.tab', function () {
-    $('.tab-content').hide();
+    // from starter code lab 5:
+    // if ($(this) === $('#main')) {
+    //   $('#list-stuff').hide();
+    //   $('#about').hide();
+    //   $('#projects').hide();
+    // } else if ($(this) === $('#about')) {
+    //   $('#main').hide();
+    //   $('#list-stuff').hide();
+    //   $('#projects').hide();
+    // } else {
+    //   $('#main').hide();
+    //   $('#about').hide();
+    //   $('#list-stuff').hide();
+    // }
+    // $('.tab-content').hide();
     // from starter code lab 4:
     // $('#' + $(this).data('content')).fadeIn();
   });
