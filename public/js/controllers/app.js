@@ -11,13 +11,19 @@ function Projects (projectDataObj) {
 }
 
 
-Projects.prototype.toHtml = function () {
-  var $template = $('#projects').clone();
+// Projects.prototype.toHtml = function () {
+//   var $template = $('#projects').clone();
+//
+//   $template.find('header > h1').text(this.name);
+//   $template.find('div > img').text(this.img);
+//   $template.find('section').text(this.description);
+//   return $template;
+// }
 
-  $template.find('header > h1').text(this.name);
-  $template.find('div > img').text(this.img);
-  $template.find('section').text(this.description);
-  return $template;
+Projects.prototype.toHtml = function() {
+  var projectTemplateString = $('#projectsHandlebarTemplate').html();
+  var compiledProject = Handlebars.compile(projectTemplateString);
+  return compiledProject(projectTemplateString);
 }
 
 projectData.forEach(function(projectDataObj) {
@@ -27,3 +33,11 @@ projectData.forEach(function(projectDataObj) {
 projects.forEach(function(project){
   $('#projects').append(project.toHtml());
 });
+
+function addNewElementForCloning () {
+  var newListElement = $('.LItemplateUL').clone();
+  newListElement.text('here is another li, this is silly');
+  console.log(newListElement);
+  $('ul').append(newListElement);
+}
+addNewElementForCloning();
