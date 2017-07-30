@@ -7,7 +7,14 @@
     <link href="styles/icons.css" type="text/css" rel="stylesheet"/>
     <link href="styles/base.css" type="text/css" rel="stylesheet"/>
     <link href="styles/modules.css" type="text/css" rel="stylesheet"/>
-    <link href="styles/style.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/layout.css" type="text/css" rel="stylesheet"/>
+    <script type="text/x-handlebars-template" id="projectsHandlebarTemplate">
+      <article>
+        <h2 class="projectName">{{name}}</h2>
+        <img class="projectImg" src="{{img}}" />
+        <section class="projectDescription">{{section}}</section>
+      </article>
+</script>
   </head>
   <body>
     <header class="header">
@@ -19,7 +26,7 @@
         <ul class="nav" id="main-links">
           <li class="nav-tabs" id="nav-main"><a href="#main" class="icon-home">  home</a></li>
           <li class="nav-tabs" id="nav-about"><a href="#about" class="icon-address-book">  about</a></li>
-          <li class="nav-tabs" id="nav-projects"><a href="#projects">projects</a></li>
+          <li class="nav-tabs" id="nav-projects"><a href="#projects" class="icon-rocket">projects</a></li>
         </ul>
       </nav>
     </header>
@@ -33,7 +40,7 @@
         <p>The trouble with computers, of course, is that they're very sophisticated idiots. They do exactly what you tell them at amazing speed. Even if you order them to kill you. So if you do happen to change your mind, it's very difficult to stop them from obeying the original order. But not impossible. Come on! Would you like a jelly baby? What?! Come out. And don't touch anything! You're standing on my scarf. Well, of course I'm being childish! There's no point being grown-up if you can't be childish sometimes.</p>
       </section>
       <section id="list-stuff" class="tab-content">
-        <ul>
+        <ul class="nonsense">
           <li class="LItemplateUL">Hi there!</li>
         </ul>
       </section>
