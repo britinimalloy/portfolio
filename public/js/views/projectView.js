@@ -3,26 +3,22 @@
 var projectView = {};
 
 projectView.handleMainNav = function () {
-  $('.main-nav').on('click', '.tab', function () {
-    // from starter code lab 5:
-    // if ($(this) === $('#main')) {
-    //   $('#list-stuff').hide();
-    //   $('#about').hide();
-    //   $('#projects').hide();
-    // } else if ($(this) === $('#about')) {
-    //   $('#main').hide();
-    //   $('#list-stuff').hide();
-    //   $('#projects').hide();
-    // } else {
-    //   $('#main').hide();
-    //   $('#about').hide();
-    //   $('#list-stuff').hide();
-    // }
-    // $('.tab-content').hide();
-    // from starter code lab 4:
-    // $('#' + $(this).data('content')).fadeIn();
+  // click on the nav links to hide all sections, then show only the selected one
+  // The following content is help from Aeone:
+  $('.nav-tabs').on('click', function(){
+    $('.tab-content').hide();
+    var selected = $(this).attr('id');
+    console.log(selected);
+
+    if (selected === 'nav-about') {
+      $('#about').show();
+    } else if (selected === 'nav-projects') {
+      $('#projects').show();
+    } else {
+      $('#main').show();
+    }
   });
-  $('.main-nav .tab:first').click();
+  $('#main-nav .nav-tabs:first').click();
 };
 
 projectView.handleHamburgerBehavior = function () {
@@ -32,17 +28,7 @@ projectView.handleHamburgerBehavior = function () {
   })
 };
 
-// hide everything but main (and footer section) on page load
-projectView.pageInit = function () {
-  // $('.tab-content').hide();
-  $('#main').show();
-  $('#list-stuff').hide();
-  $('#about').hide();
-  $('#projects').hide();
-};
-
 $(document).ready(function () {
-  // projectView.pageInit();
   projectView.handleMainNav();
   projectView.handleHamburgerBehavior();
 })
