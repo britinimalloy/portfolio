@@ -8,6 +8,13 @@
     <link href="styles/base.css" type="text/css" rel="stylesheet"/>
     <link href="styles/modules.css" type="text/css" rel="stylesheet"/>
     <link href="styles/layout.css" type="text/css" rel="stylesheet"/>
+    <script type="text/x-handlebars-template" id="projectsHandlebarTemplate">
+      <article>
+        <h2 class="projectName">{{name}}</h2>
+        <img class="projectImg" src="{{img}}" />
+        <section class="projectDescription">{{section}}</section>
+      </article>
+    </script>
   </head>
   <body>
     <header class="header">
