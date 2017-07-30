@@ -48,6 +48,6 @@ projects.forEach(function(project){
 function addNewElementForCloning () {
   var newListElement = $('.LItemplateUL').clone();
   newListElement.text('here is another li, this is silly');
-  $('ul').append(newListElement);
+  $('ul.nonsense').append(newListElement);
 }
 addNewElementForCloning();
