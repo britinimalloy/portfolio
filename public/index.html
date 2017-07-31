@@ -7,7 +7,14 @@
     <link href="styles/icons.css" type="text/css" rel="stylesheet"/>
     <link href="styles/base.css" type="text/css" rel="stylesheet"/>
     <link href="styles/modules.css" type="text/css" rel="stylesheet"/>
-    <link href="styles/style.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/layout.css" type="text/css" rel="stylesheet"/>
+    <script type="text/x-handlebars-template" id="projectsHandlebarTemplate">
+      <article class="clearfix" data-name="{{name}}" data-description="{{description}}">
+        <h2 class="projectName">{{name}}</h2>
+        <img class="projectImg" src="{{img}}" />
+        <section class="projectDescription">{{description}}</section>
+      </article>
+    </script>
   </head>
   <body>
     <header class="header">
@@ -19,7 +26,7 @@
         <ul class="nav" id="main-links">
           <li class="nav-tabs" id="nav-main"><a href="#main" class="icon-home">  home</a></li>
           <li class="nav-tabs" id="nav-about"><a href="#about" class="icon-address-book">  about</a></li>
-          <li class="nav-tabs" id="nav-projects"><a href="#projects">projects</a></li>
+          <li class="nav-tabs" id="nav-projects"><a href="#projects" class="icon-rocket">projects</a></li>
         </ul>
       </nav>
     </header>
@@ -33,7 +40,7 @@
         <p>The trouble with computers, of course, is that they're very sophisticated idiots. They do exactly what you tell them at amazing speed. Even if you order them to kill you. So if you do happen to change your mind, it's very difficult to stop them from obeying the original order. But not impossible. Come on! Would you like a jelly baby? What?! Come out. And don't touch anything! You're standing on my scarf. Well, of course I'm being childish! There's no point being grown-up if you can't be childish sometimes.</p>
       </section>
       <section id="list-stuff" class="tab-content">
-        <ul>
+        <ul class="nonsense">
           <li class="LItemplateUL">Hi there!</li>
         </ul>
       </section>
@@ -48,7 +55,7 @@
         <p>I just have one question… do you know how to fly this thing? These are attack eyebrows. You could take bottle tops off with these. I don't think that I'm a hugging person now. You see when I started, all those years ago, I was just running. I called myself the Doctor but it was just a name. Then I went to Skaro. And I met you lot. And I understood who I was. Shut up! Just shut up, shut up, shut up, shuttity up up up! It's all right up to the eyebrows. Then it goes haywire. When this is all over, you can find a shoulder to cry on. But for now, you need me.</p>
       </section>
       <section id="projects" class="tab-content">
-        <article class="project-template" data-category="cat">
+        <!-- <article class="project-template" data-category="cat">
           <header>
             <h1>Title</h1>
           </header>
@@ -56,7 +63,7 @@
             <img />
           </div>
           <section class="project-body"></section>
-        </article>
+        </article> -->
       </section>
     </main>
     <footer>
