@@ -9,12 +9,12 @@
     <link href="styles/modules.css" type="text/css" rel="stylesheet"/>
     <link href="styles/layout.css" type="text/css" rel="stylesheet"/>
     <script type="text/x-handlebars-template" id="projectsHandlebarTemplate">
-      <article>
+      <article class="clearfix" data-name="{{name}}" data-description="{{description}}">
         <h2 class="projectName">{{name}}</h2>
         <img class="projectImg" src="{{img}}" />
-        <section class="projectDescription">{{section}}</section>
+        <section class="projectDescription">{{description}}</section>
       </article>
-    </script>
+</script>
   </head>
   <body>
     <header class="header">
