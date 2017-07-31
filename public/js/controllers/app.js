@@ -20,7 +20,6 @@ Projects.prototype.toHtml = function () {
 
 projectData.forEach(function(projectDataObj) {
   projects.push(new Projects(projectDataObj));
-  //console.log(projects);
 });
 
 projects.forEach(function(project){
@@ -39,7 +38,6 @@ Projects.fetchAll = function() {
       console.error(err);
     });
   }
-  //console.log('fetchAll seems to have worked?');
 }
 
 function addNewElementForCloning () {
