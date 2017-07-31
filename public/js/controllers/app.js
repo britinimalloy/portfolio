@@ -20,12 +20,25 @@ Projects.prototype.toHtml = function () {
 
 projectData.forEach(function(projectDataObj) {
   projects.push(new Projects(projectDataObj));
-  console.log(projects);
 });
 
 projects.forEach(function(project){
   $('#projects').append(project.toHtml());
 });
+
+Projects.fetchAll = function() {
+  if (localStorage.projectData) {
+    Projects.loadAll(JSON.parse(localStorage.projectData))
+  } else {
+    $.getJSON('data/projectArticles.json')
+    .then(function(projectData) {
+      Projects.loadAll(projectData);
+      localStorage.projectData = JSON.stringify(projectData);
+    }, function(err) {
+      console.error(err);
+    });
+  }
+}
 
 function addNewElementForCloning () {
   var newListElement = $('.LItemplateUL').clone();
@@ -33,30 +46,3 @@ function addNewElementForCloning () {
   $('ul.nonsense').append(newListElement);
 }
 addNewElementForCloning();
-
-
-
-// Projects.prototype.toHtml = function () {
-//   var $template = $('#projects').clone();
-//
-//   $template.find('header > h1').text(this.name);
-//   $template.find('div > img').text(this.img);
-//   $template.find('section').text(this.description);
-//   return $template;
-// }
-
-// Projects.prototype.toHtml = function() {
-//   var projectTemplateString = $('#projectsHandlebarTemplate').html();
-//   console.log(projectTemplateString);
-//   var compiledProject = Handlebars.compile(projectTemplateString);
-//   console.log(compiledProject);
-//   return compiledProject(projectTemplateString);
-// }
-
-// Projects.prototype.toHtml = function() {
-//   var projectTemplateString = Handlebars.compile($('#projectsHandlebarTemplate').text());
-//   console.log(projectTemplateString);
-//   var compiledProject = Handlebars.compile(projectTemplateString);
-//   console.log(compiledProject);
-//   return projectTemplateString(this);
-// }
